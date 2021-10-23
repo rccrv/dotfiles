@@ -1,0 +1,15 @@
+source $HOME/.bash/settings.bash
+
+source $HOME/.bash/aliases.bash
+
+source $HOME/.bash/completion.bash
+
+source $HOME/.bash/paths.bash
+
+source $HOME/.bash/functions.bash
+
+source $HOME/.bash/nix.bash
+
+source $HOME/.bash/machine.bash
+
+source $HOME/.bash/devenvs.bash

@@ -1,0 +1,61 @@
+"" Basic settings
+set encoding=utf-8
+set nocompatible
+set nobackup
+set nomodeline
+
+filetype plugin indent on
+autocmd FileType text setlocal textwidth=78
+
+set incsearch
+syntax on
+set hlsearch
+
+set history=200
+set ruler
+set showcmd
+
+set noerrorbells
+set vb t_vb=
+
+set undolevels=1000
+set updatecount=100
+set updatetime=6000
+
+set backspace=indent,eol,start
+
+set autoindent
+set tabstop=2
+set shiftwidth=2
+set expandtab
+
+set nowrap
+
+set wildmode=longest,list,full
+set wildmenu
+let g:SuperTabDefaultCompletionType = "context"
+
+set hidden
+
+colorscheme desert
+
+
+set pastetoggle=<F10>
+inoremap <C-v> <F10><C-r>+<F10>
+vnoremap <C-c> "+y
+
+nmap <F1> <nop>
+
+set autochdir
+
+map <leader>l :e ~/Accounting/2021/current.ledger<CR>
+
+call plug#begin('~/.vim/plugged')
+Plug 'ervandew/supertab'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'ledger/vim-ledger'
+call plug#end()
+
+if !isdirectory($HOME .'/.vim/autoload')
+  call mkdir($HOME . '/.vim/autoload', 'p')
+endif

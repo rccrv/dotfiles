@@ -149,11 +149,7 @@ cmp.setup {
 }
 
 local autopairs_cmp = require('nvim-autopairs.completion.cmp')
-autopairs_cmp.setup({
-  map_cr = true,
-  map_complete = true,
-  auto_select = true
-})
+cmp.event:on( 'confirm_done', autopairs_cmp.on_confirm_done())
 
 local lsp_signature = require 'lsp_signature'
 lsp_signature.setup({

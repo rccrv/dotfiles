@@ -1,9 +1,4 @@
-# Golang #
-if [ -d $HOME/.goenv ]; then
-  export PATH="$HOME/.goenv/shims:$PATH"
-else
-  export PATH="/usr/lib/go-1.17/bin:$PATH"
-fi
+export PATH="/usr/lib/go-1.17/bin:$PATH"
 
 # Python #
 export WORKON_HOME=$HOME/.virtualenvs

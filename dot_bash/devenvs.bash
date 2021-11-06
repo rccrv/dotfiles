@@ -1,4 +1,4 @@
-export PATH="/usr/lib/go-1.17/bin:$PATH"
+export PATH="$HOME/.userland/software/go/bin:$PATH"
 
 # Python #
 export WORKON_HOME=$HOME/.virtualenvs

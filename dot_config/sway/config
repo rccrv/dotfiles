@@ -53,9 +53,9 @@ floating_modifier $mod normal
 bindsym $mod+Shift+c reload
 
 # Firefox
-bindsym Ctrl+Alt+b exec /home/ricardo/.userland/software/firefox/firefox
+bindsym Ctrl+Alt+b exec firefox
 # Kitty
-bindsym Ctrl+Alt+t exec $terminal
+bindsym Ctrl+Alt+t exec kitty
 # swaylock
 bindsym Ctrl+Alt+l exec swaylock
 # Volume up, volume down and mute

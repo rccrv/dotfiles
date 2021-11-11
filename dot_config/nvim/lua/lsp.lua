@@ -110,6 +110,11 @@ lspconfig.terraformls.setup({
   filetypes = {'terraform', '.tf'}
 })
 
+local valals_binary = nix_bin .. 'vala-language-server'
+lspconfig.vala_ls.setup({
+  cmd = {valals_binary}
+})
+
 local lspkind = require 'lspkind'
 lspkind.init()
 

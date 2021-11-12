@@ -53,7 +53,7 @@ floating_modifier $mod normal
 bindsym $mod+Shift+c reload
 
 # Firefox
-bindsym Ctrl+Alt+b exec firefox
+bindsym Ctrl+Alt+b exec firefox-wayland
 # Kitty
 bindsym Ctrl+Alt+t exec kitty
 # swaylock

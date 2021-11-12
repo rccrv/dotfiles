@@ -107,12 +107,15 @@ lspconfig.rust_analyzer.setup({
 local terraformls_binary = nix_bin .. '/terraform-ls'
 lspconfig.terraformls.setup({
   cmd = {terraformls_binary, 'serve'},
-  filetypes = {'terraform', '.tf'}
+  filetypes = {'terraform', '.tf'},
+  capabilities = capabilities
 })
 
-local valals_binary = nix_bin .. 'vala-language-server'
+local valals_binary = nix_bin .. '/vala-language-server'
 lspconfig.vala_ls.setup({
-  cmd = {valals_binary}
+  cmd = {valals_binary},
+  filetypes = {'vala', 'genie'},
+  capabilities = capabilities
 })
 
 local lspkind = require 'lspkind'

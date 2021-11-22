@@ -20,7 +20,7 @@ xwayland enable
 default_border pixel 2
 
 # Wallpaper
-output * bg /home/ricardo/Pictures/Parque_do_Ibirapuera.jpeg fill
+output * bg /home/ricardo/Pictures/valley-landscape.jpg fill
 
 
 ### Input configuration

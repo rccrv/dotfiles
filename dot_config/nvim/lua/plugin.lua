@@ -68,7 +68,4 @@ return require('packer').startup(function()
       'mfussenegger/nvim-dap'
     }
   }
-  use {
-    'arrufat/vala.vim'
-  }
 end)

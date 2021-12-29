@@ -23,7 +23,7 @@ alias bgpwhois="whois -h whois.bgpmon.net"
 
 # Intepreters #
 alias bc="bc -lq"
-alias R="R -q"
+alias R="R -q --no-save"
 
 # X11 software #
 alias xclip="xclip -selection c"

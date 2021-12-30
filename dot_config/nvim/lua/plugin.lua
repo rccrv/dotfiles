@@ -26,10 +26,10 @@ return require('packer').startup(function()
   }
   -- nvim-lspconfig: lsp servers configurations
   use 'neovim/nvim-lspconfig'
-  -- symbols-outline: list document symbols outline
+  -- aerial: code outline window
   use {
-    'simrat39/symbols-outline.nvim',
-    cmd = {'SymbolsOutline', 'SymbolsOutlineOpen'}
+    'stevearc/aerial.nvim',
+    cmd = {'AerialToggle', 'AerialOpen'}
   }
   -- nvim-treesitter: allows some beautiful stuff with text
   use 'nvim-treesitter/nvim-treesitter'

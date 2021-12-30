@@ -30,7 +30,7 @@ wk.register({
       i = {'<cmd>lua vim.lsp.buf.implementation()<cr>', 'Go to Implementation'},
       I = {'<cmd>LspInfo<cr>', 'LSP Info'},
       n = {'<cmd>lua vim.lsp.buf.rename()<cr>', 'Rename'},
-      o = {'<cmd>SymbolsOutline<cr>', 'Symbols Outline'},
+      o = {'<cmd>AerialToggle<cr>', 'Outline'},
       p = {'<cmd>FzfLua lsp_definitions<cr>', 'Peek Definition'},
       r = {'<cmd>FzfLua lsp_references<cr>', 'References'},
       s = {'<cmd>lua vim.lsp.buf.signature_help()<cr>', 'Signature Help'},

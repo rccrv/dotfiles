@@ -20,7 +20,7 @@ map('n', '<A->>', ' :BufferMoveNext<cr>', opts)
 map('n', '<A-c>', ':BufferClose<cr>', opts)
 
 -- \l open the ledger file
-map('n', '\\l', ':e ~/Git/ledger/Accounting/2021/current.ledger<cr>:chdir ~/Git/ledger/Accounting/2021<cr>', opts)
+map('n', '\\l', ':e ~/Git/ledger/Accounting/2022/current.ledger<cr>:chdir ~/Git/ledger/Accounting/2022<cr>', opts)
 
 -- Map space as leader key
 map('', '<Space>', '<nop>', opts)

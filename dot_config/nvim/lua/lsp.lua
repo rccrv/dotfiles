@@ -1,6 +1,9 @@
 -- Import lspconfig
 local lspconfig = require 'lspconfig'
 
+-- Import aerial
+local aerial = require 'aerial'
+
 -- Get a ClientCapabilities object that is passed to LSP servers
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
@@ -18,6 +21,7 @@ table.insert(runtime_path, "lua/?/init.lua")
 lspconfig.sumneko_lua.setup({
   cmd = {sumneko_binary, '-E', sumneko_root_path .. '/main.lua'},
   capabilities = capabilities,
+  on_attach = aerial.on_attach,
   settings = {
     Lua = {
       runtime = {
@@ -43,6 +47,7 @@ local pyright_binary = nix_bin .. '/pyright-langserver'
 lspconfig.pyright.setup({
   cmd = {pyright_binary, '--stdio'},
   capabilities = capabilities,
+  on_attach = aerial.on_attach,
   settings = {
     python = {
       analysis = {
@@ -60,6 +65,7 @@ local jsonls_binary = nix_bin .. '/vscode-json-languageserver'
 lspconfig.jsonls.setup({
   cmd = {jsonls_binary, '--stdio'},
   capabilities = capabilities,
+  on_attach = aerial.on_attach,
 })
 
 -- vscode-language-server: HTML
@@ -67,6 +73,7 @@ local htmlls_binary = nix_bin .. '/html-languageserver'
 lspconfig.html.setup({
   cmd = {htmlls_binary, '--stdio'},
   capabilities = capabilities,
+  on_attach = aerial.on_attach,
 })
 
 -- vscode-language-server: CSS
@@ -74,40 +81,46 @@ local cssls_binary = nix_bin .. '/css-languageserver'
 lspconfig.cssls.setup({
   cmd = {cssls_binary, '--stdio'},
   capabilities = capabilities,
+  on_attach = aerial.on_attach,
 })
 
 -- clangd: C, C++
 local clangd_binary = '/usr/bin/clangd'
 lspconfig.clangd.setup({
   cmd = {clangd_binary, '--background-index'},
-  capabilities = capabilities
+  capabilities = capabilities,
+  on_attach = aerial.on_attach,
 })
 
 -- tsserver: Javascript and Typescript
 local tsserver_binary = nix_bin .. '/typescript-language-server'
 lspconfig.tsserver.setup({
-  cmd = {tsserver_binary, '--stdio'}
+  cmd = {tsserver_binary, '--stdio'},
+  on_attach = aerial.on_attach,
 })
 
 -- gopls: Golang
 local gopls_binary = nix_bin .. '/gopls'
 lspconfig.gopls.setup({
   cmd = {gopls_binary},
-  capabilities = capabilities
+  capabilities = capabilities,
+  on_attach = aerial.on_attach,
 })
 
 -- rust-analyzer: Rust
 local rust_analyzer_binary = nix_bin .. '/rust-analyzer'
 lspconfig.rust_analyzer.setup({
   cmd = {rust_analyzer_binary},
-  capabilities = capabilities
+  capabilities = capabilities,
+  on_attach = aerial.on_attach,
 })
 
 -- terrafromls: Terraform
 local terraformls_binary = nix_bin .. '/terraform-ls'
 lspconfig.terraformls.setup({
   cmd = {terraformls_binary, 'serve'},
-  filetypes = {'terraform', '.tf'}
+  filetypes = {'terraform', '.tf'},
+  on_attach = aerial.on_attach,
 })
 
 local lspkind = require 'lspkind'
@@ -148,7 +161,7 @@ cmp.setup {
   },
 }
 
-local autopairs_cmp = require('nvim-autopairs.completion.cmp')
+local autopairs_cmp = require 'nvim-autopairs.completion.cmp'
 cmp.event:on( 'confirm_done', autopairs_cmp.on_confirm_done())
 
 local lsp_signature = require 'lsp_signature'
@@ -156,5 +169,5 @@ lsp_signature.setup({
   bind = true,
 })
 
-local autopairs = require('nvim-autopairs')
+local autopairs = require 'nvim-autopairs'
 autopairs.setup()

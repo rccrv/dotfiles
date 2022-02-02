@@ -29,7 +29,6 @@ return require('packer').startup(function()
   -- aerial: code outline window
   use {
     'stevearc/aerial.nvim',
-    cmd = {'AerialToggle', 'AerialOpen'}
   }
   -- nvim-treesitter: allows some beautiful stuff with text
   use 'nvim-treesitter/nvim-treesitter'

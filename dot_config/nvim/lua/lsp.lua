@@ -124,7 +124,9 @@ lspconfig.terraformls.setup({
 })
 
 local lspkind = require 'lspkind'
-lspkind.init()
+lspkind.init({
+  mode = 'symbol_text'
+})
 
 local luasnip = require 'luasnip'
 

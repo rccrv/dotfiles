@@ -123,6 +123,12 @@ lspconfig.terraformls.setup({
   on_attach = aerial.on_attach,
 })
 
+-- julials: Julia
+lspconfig.julials.setup({})
+
+-- r_language_server: R
+lspconfig.r_language_server.setup({})
+
 local lspkind = require 'lspkind'
 lspkind.init({
   mode = 'symbol_text'

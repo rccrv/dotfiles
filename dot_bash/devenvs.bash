@@ -1,3 +1,4 @@
+# Go #
 export PATH="$HOME/.userland/software/go/bin:$PATH"
 
 # Python #
@@ -20,6 +21,8 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # Node #
 eval "$(fnm env)"
 
-# Java #
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+# Julia #
+export PATH="$HOME/.userland/software/julia/bin:$PATH"
+
+# R $
+export R_HISTFILE=~/.Rhistory

@@ -3,6 +3,7 @@ local lspconfig = require 'lspconfig'
 
 -- Import aerial
 local aerial = require 'aerial'
+aerial.setup({})
 
 -- Get a ClientCapabilities object that is passed to LSP servers
 local capabilities = vim.lsp.protocol.make_client_capabilities()

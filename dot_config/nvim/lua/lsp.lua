@@ -163,6 +163,12 @@ cmp.setup {
       behavior = cmp.ConfirmBehavior.Replace,
       select = false,
     }),
+    ['<Up>'] = cmp.mapping.select_prev_item({
+      behavior = cmp.SelectBehavior.Select
+    }),
+    ['<Down>'] = cmp.mapping.select_next_item({
+      behavior = cmp.SelectBehavior.Select
+    }),
     ['<Esc>'] = cmp.mapping.close(),
   },
   sources = {

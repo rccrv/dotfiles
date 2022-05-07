@@ -26,6 +26,8 @@ return require('packer').startup(function()
   }
   -- nvim-lspconfig: lsp servers configurations
   use 'neovim/nvim-lspconfig'
+  -- nvim-lsp-installer: install lsp servers
+  use 'williamboman/nvim-lsp-installer'
   -- aerial: code outline window
   use {
     'stevearc/aerial.nvim',

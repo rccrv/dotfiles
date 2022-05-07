@@ -1,6 +1,10 @@
 -- Import lspconfig
 local lspconfig = require 'lspconfig'
 
+-- TODO: List of LSP servers should be machine defined
+local lspinstaller = require 'nvim-lsp-installer'
+lspinstaller.setup({})
+
 -- Import aerial
 local aerial = require 'aerial'
 aerial.setup({})
@@ -9,18 +13,11 @@ aerial.setup({})
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
--- Variable holding the path of LSP servers
-local nix = '/home/' .. vim.fn.expand('$USER') .. '/.nix-profile'
-local nix_bin = nix .. '/bin'
-
 -- sumneko: Lua
-local sumneko_root_path = nix .. '/extras'
-local sumneko_binary = nix_bin .. '/lua-language-server'
 local runtime_path = vim.split(package.path, ';')
 table.insert(runtime_path, "lua/?.lua")
 table.insert(runtime_path, "lua/?/init.lua")
 lspconfig.sumneko_lua.setup({
-  cmd = {sumneko_binary, '-E', sumneko_root_path .. '/main.lua'},
   capabilities = capabilities,
   on_attach = aerial.on_attach,
   settings = {
@@ -44,9 +41,7 @@ lspconfig.sumneko_lua.setup({
 })
 
 -- pyright: Python
-local pyright_binary = nix_bin .. '/pyright-langserver'
 lspconfig.pyright.setup({
-  cmd = {pyright_binary, '--stdio'},
   capabilities = capabilities,
   on_attach = aerial.on_attach,
   settings = {
@@ -62,64 +57,48 @@ lspconfig.pyright.setup({
 })
 
 -- vscode-language-server: JSON
-local jsonls_binary = nix_bin .. '/vscode-json-languageserver'
 lspconfig.jsonls.setup({
-  cmd = {jsonls_binary, '--stdio'},
   capabilities = capabilities,
   on_attach = aerial.on_attach,
 })
 
 -- vscode-language-server: HTML
-local htmlls_binary = nix_bin .. '/html-languageserver'
 lspconfig.html.setup({
-  cmd = {htmlls_binary, '--stdio'},
   capabilities = capabilities,
   on_attach = aerial.on_attach,
 })
 
 -- vscode-language-server: CSS
-local cssls_binary = nix_bin .. '/css-languageserver'
 lspconfig.cssls.setup({
-  cmd = {cssls_binary, '--stdio'},
   capabilities = capabilities,
   on_attach = aerial.on_attach,
 })
 
 -- clangd: C, C++
-local clangd_binary = '/usr/bin/clangd'
 lspconfig.clangd.setup({
-  cmd = {clangd_binary, '--background-index'},
   capabilities = capabilities,
   on_attach = aerial.on_attach,
 })
 
 -- tsserver: Javascript and Typescript
-local tsserver_binary = nix_bin .. '/typescript-language-server'
 lspconfig.tsserver.setup({
-  cmd = {tsserver_binary, '--stdio'},
   on_attach = aerial.on_attach,
 })
 
 -- gopls: Golang
-local gopls_binary = nix_bin .. '/gopls'
 lspconfig.gopls.setup({
-  cmd = {gopls_binary},
   capabilities = capabilities,
   on_attach = aerial.on_attach,
 })
 
 -- rust-analyzer: Rust
-local rust_analyzer_binary = nix_bin .. '/rust-analyzer'
 lspconfig.rust_analyzer.setup({
-  cmd = {rust_analyzer_binary},
   capabilities = capabilities,
   on_attach = aerial.on_attach,
 })
 
 -- terrafromls: Terraform
-local terraformls_binary = nix_bin .. '/terraform-ls'
 lspconfig.terraformls.setup({
-  cmd = {terraformls_binary, 'serve'},
   filetypes = {'terraform', '.tf'},
   on_attach = aerial.on_attach,
 })
@@ -129,6 +108,18 @@ lspconfig.julials.setup({})
 
 -- r_language_server: R
 lspconfig.r_language_server.setup({})
+
+-- elixirls: Elixir
+lspconfig.elixirls.setup({})
+
+-- jdtls: Java
+lspconfig.jdtls.setup({})
+
+-- lemminx: XML
+lspconfig.lemminx.setup({})
+
+-- texlab: LaTeX
+lspconfig.texlab.setup({})
 
 local lspkind = require 'lspkind'
 lspkind.init({

@@ -1,7 +1,6 @@
 -- Import lspconfig
 local lspconfig = require 'lspconfig'
 
--- TODO: List of LSP servers should be machine defined
 local lspinstaller = require 'nvim-lsp-installer'
 lspinstaller.setup({})
 
@@ -13,13 +12,19 @@ aerial.setup({})
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
+local function custom_attach(client, buffnr)
+  -- Formatting is now done by null-ls
+  client.resolved_capabilities.document_formatting = false
+  aerial.on_attach(client, buffnr)
+end
+
 -- sumneko: Lua
 local runtime_path = vim.split(package.path, ';')
 table.insert(runtime_path, "lua/?.lua")
 table.insert(runtime_path, "lua/?/init.lua")
 lspconfig.sumneko_lua.setup({
   capabilities = capabilities,
-  on_attach = aerial.on_attach,
+  on_attach = custom_attach,
   settings = {
     Lua = {
       runtime = {
@@ -43,7 +48,7 @@ lspconfig.sumneko_lua.setup({
 -- pyright: Python
 lspconfig.pyright.setup({
   capabilities = capabilities,
-  on_attach = aerial.on_attach,
+  on_attach = custom_attach,
   settings = {
     python = {
       analysis = {
@@ -59,36 +64,37 @@ lspconfig.pyright.setup({
 -- vscode-language-server: JSON
 lspconfig.jsonls.setup({
   capabilities = capabilities,
-  on_attach = aerial.on_attach,
+  on_attach = custom_attach,
 })
 
 -- vscode-language-server: HTML
 lspconfig.html.setup({
   capabilities = capabilities,
-  on_attach = aerial.on_attach,
+  on_attach = custom_attach,
 })
 
 -- vscode-language-server: CSS
 lspconfig.cssls.setup({
   capabilities = capabilities,
-  on_attach = aerial.on_attach,
+  on_attach = custom_attach,
 })
 
 -- clangd: C, C++
 lspconfig.clangd.setup({
   capabilities = capabilities,
-  on_attach = aerial.on_attach,
+  on_attach = custom_attach,
 })
 
 -- tsserver: Javascript and Typescript
 lspconfig.tsserver.setup({
-  on_attach = aerial.on_attach,
+  capabilities = capabilities,
+  on_attach = custom_attach,
 })
 
 -- gopls: Golang
 lspconfig.gopls.setup({
   capabilities = capabilities,
-  on_attach = aerial.on_attach,
+  on_attach = custom_attach,
 })
 
 -- rust-analyzer: Rust
@@ -100,26 +106,45 @@ lspconfig.rust_analyzer.setup({
 -- terrafromls: Terraform
 lspconfig.terraformls.setup({
   filetypes = {'terraform', '.tf'},
-  on_attach = aerial.on_attach,
+  capabilities = capabilities,
+  on_attach = custom_attach,
 })
 
 -- julials: Julia
-lspconfig.julials.setup({})
+lspconfig.julials.setup({
+  capabilities = capabilities,
+  on_attach = custom_attach,
+})
 
 -- r_language_server: R
-lspconfig.r_language_server.setup({})
+lspconfig.r_language_server.setup({
+  capabilities = capabilities,
+  on_attach = custom_attach,
+})
 
 -- elixirls: Elixir
-lspconfig.elixirls.setup({})
+lspconfig.elixirls.setup({
+  capabilities = capabilities,
+  on_attach = custom_attach,
+})
 
 -- jdtls: Java
-lspconfig.jdtls.setup({})
+lspconfig.jdtls.setup({
+  capabilities = capabilities,
+  on_attach = custom_attach,
+})
 
 -- lemminx: XML
-lspconfig.lemminx.setup({})
+lspconfig.lemminx.setup({
+  capabilities = capabilities,
+  on_attach = custom_attach,
+})
 
 -- texlab: LaTeX
-lspconfig.texlab.setup({})
+lspconfig.texlab.setup({
+  capabilities = capabilities,
+  on_attach = custom_attach,
+})
 
 local lspkind = require 'lspkind'
 lspkind.init({

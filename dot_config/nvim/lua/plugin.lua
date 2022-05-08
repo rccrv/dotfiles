@@ -53,6 +53,8 @@ return require('packer').startup(function()
   use 'windwp/nvim-autopairs'
   -- lua-dev: lua completion to neovim functions
   use 'folke/lua-dev.nvim'
+  -- null-ls: Use linters and formatters
+  use 'jose-elias-alvarez/null-ls.nvim'
   -- fzf-lua: fuzzy file search and live grep
   use {
     'ibhagwan/fzf-lua',

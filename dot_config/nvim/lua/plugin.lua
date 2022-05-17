@@ -80,4 +80,5 @@ return require('packer').startup(function()
       require('gitsigns').setup()
     end
   }
+  use 'folke/todo-comments.nvim'
 end)

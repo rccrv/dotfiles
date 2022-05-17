@@ -41,3 +41,8 @@ null_ls.setup({
     null_ls.builtins.formatting.trim_whitespace
   }
 })
+
+local todo_comments = require 'todo-comments'
+todo_comments.setup({
+  signs = false
+})

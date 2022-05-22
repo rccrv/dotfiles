@@ -38,6 +38,8 @@ let g:SuperTabDefaultCompletionType = "context"
 set hidden
 
 colorscheme desert
+highlight Normal guibg=NONE ctermbg=NONE
+highlight StatusLine guibg=NONE ctermbg=NONE
 
 
 set pastetoggle=<F10>

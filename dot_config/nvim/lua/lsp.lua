@@ -116,6 +116,12 @@ lspconfig.julials.setup({
   on_attach = custom_attach,
 })
 
+-- dartls: Dart
+lspconfig.dartls.setup({
+  capabilities = capabilities,
+  on_attach = custom_attach,
+})
+
 -- r_language_server: R
 lspconfig.r_language_server.setup({
   capabilities = capabilities,

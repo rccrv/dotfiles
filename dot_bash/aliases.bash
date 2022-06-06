@@ -8,7 +8,7 @@ alias rm="rm -vi"
 # Console #
 alias vi="nvim"
 alias vim="nvim"
-alias lvim="/usr/bin/vim"
+alias lvim="TERM='xterm-256color' /usr/bin/vim"
 alias tmux="tmux attach || tmux"
 
 # Network #

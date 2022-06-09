@@ -18,6 +18,13 @@ wk.register({
       f = {'<cmd>FzfLua files<cr>', 'Find Files'},
       g = {'<cmd>FzfLua live_grep<cr>', 'Live Grep'},
     },
+    g = {
+      name = 'Git',
+      b = {'<cmd>FzfLua git_branches<cr>', 'Branches'},
+      l = {'<cmd>Gitsigns blame_line<cr>', 'Blame Line'},
+      L = {'<cmd>FzfLua git_commits<cr>', 'Log'},
+      s = {'<cmd>FzfLua git_status<cr>', 'Status'},
+    },
     l = {
       name = 'LSP',
       --a = {'<cmd>Lspsaga code_action<cr>', 'Code Action'},

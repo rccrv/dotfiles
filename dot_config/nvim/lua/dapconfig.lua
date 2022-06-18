@@ -3,7 +3,7 @@ local dapui = require 'dapui'
 
 dap.adapters.lldb = {
   type = 'executable',
-  command = '/usr/bin/lldb-vscode-10',
+  command = '/usr/bin/lldb-vscode',
   name = 'lldb'
 }
 

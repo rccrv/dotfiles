@@ -64,6 +64,10 @@ return require('packer').startup(function()
   }
   -- impatient.nvim: faster neovim initialization
   use 'lewis6991/impatient.nvim'
+  -- mkdnflow
+  use 'jakewvincent/mkdnflow.nvim'
+  -- glow
+  use 'ellisonleao/glow.nvim'
   -- nvim-dap-ui: debug inside neovim using the DAP protocol
   use {
     'rcarriga/nvim-dap-ui',

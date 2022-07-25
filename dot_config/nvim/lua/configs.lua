@@ -46,3 +46,9 @@ local todo_comments = require 'todo-comments'
 todo_comments.setup({
   signs = false
 })
+
+local mkdnflow = require 'mkdnflow'
+mkdnflow.setup({})
+
+local glow = require 'glow'
+glow.setup({})

@@ -28,6 +28,9 @@ return require('packer').startup(function()
   use 'neovim/nvim-lspconfig'
   -- nvim-lsp-installer: install lsp servers
   use 'williamboman/nvim-lsp-installer'
+  -- mason: install lsp/dap servers linters and formatters
+  use 'williamboman/mason.nvim'
+  use 'williamboman/mason-lspconfig.nvim'
   -- aerial: code outline window
   use {
     'stevearc/aerial.nvim',

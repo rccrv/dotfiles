@@ -4,6 +4,9 @@ local lspconfig = require 'lspconfig'
 local lspinstaller = require 'nvim-lsp-installer'
 lspinstaller.setup({})
 
+local mason = require 'mason'
+mason.setup({})
+
 -- Import aerial
 local aerial = require 'aerial'
 aerial.setup({})

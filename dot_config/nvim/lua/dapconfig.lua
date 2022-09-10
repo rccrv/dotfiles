@@ -1,10 +1,17 @@
 local dap = require 'dap'
 local dapui = require 'dapui'
 
+local mason_path = '/home/ricardo/.local/share/nvim/mason/bin/'
+
 dap.adapters.lldb = {
   type = 'executable',
   command = '/usr/bin/lldb-vscode',
   name = 'lldb'
+}
+
+dap.adapters.python = {
+  type = 'executable',
+  command = mason_path .. 'debugpy-adapter',
 }
 
 dap.configurations.cpp = {
@@ -22,12 +29,6 @@ dap.configurations.cpp = {
 
 dap.configurations.c = dap.configurations.cpp
 dap.configurations.rust = dap.configurations.cpp
-
-dap.adapters.python = {
-  type = 'executable',
-  command = 'python',
-  args = {'-m', 'debugpy.adapter'}
-}
 
 dap.configurations.python = {
   {

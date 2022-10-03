@@ -17,7 +17,8 @@ capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 local function custom_attach(client, buffnr)
   -- Formatting is now done by null-ls
-  client.resolved_capabilities.document_formatting = false
+  client.server_capabilities.document_formatting = false
+  --client.resolved_capabilities.document_formatting = false
   aerial.on_attach(client, buffnr)
 end
 

@@ -33,6 +33,8 @@ null_ls.setup({
     }),
     -- C/C++
     null_ls.builtins.formatting.clang_format,
+    -- C#
+    null_ls.builtins.formatting.csharpier,
     -- Golang
     null_ls.builtins.formatting.gofmt,
     -- Rust

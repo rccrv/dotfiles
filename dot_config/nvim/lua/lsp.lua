@@ -17,8 +17,7 @@ capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 local function custom_attach(client, buffnr)
   -- Formatting is now done by null-ls
-  client.server_capabilities.document_formatting = false
-  --client.resolved_capabilities.document_formatting = false
+  client.server_capabilities.documentFormattingProvider = false
   aerial.on_attach(client, buffnr)
 end
 
@@ -63,6 +62,12 @@ lspconfig.pyright.setup({
       venvPath = ".venv"
     }
   }
+})
+
+-- csharp-language-server: C#
+lspconfig.csharp_ls.setup({
+  capabilities = capabilities,
+  on_attach = custom_attach,
 })
 
 -- vscode-language-server: JSON

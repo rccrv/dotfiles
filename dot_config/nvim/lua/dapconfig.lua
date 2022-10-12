@@ -14,6 +14,12 @@ dap.adapters.python = {
   command = mason_path .. 'debugpy-adapter',
 }
 
+dap.adapters.coreclr = {
+  type = 'executable',
+  command = mason_path .. 'netcoredbg',
+  args = {'--interpreter=vscode'}
+}
+
 dap.configurations.cpp = {
   {
     name = 'Launch',
@@ -40,6 +46,17 @@ dap.configurations.python = {
       return vim.fn.getcwd() .. '/.venv/bin/python'
     end
   }
+}
+
+dap.configurations.cs = {
+  {
+    type = "coreclr",
+    name = "launch - netcoredbg",
+    request = "launch",
+    program = function()
+        return vim.fn.input('Path to dll', vim.fn.getcwd() .. '/bin/Debug/', 'file')
+    end,
+  },
 }
 
 dapui.setup({})

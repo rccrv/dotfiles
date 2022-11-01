@@ -18,7 +18,6 @@ capabilities.textDocument.completion.completionItem.snippetSupport = true
 local function custom_attach(client, buffnr)
   -- Formatting is now done by null-ls
   client.server_capabilities.documentFormattingProvider = false
-  aerial.on_attach(client, buffnr)
 end
 
 -- sumneko: Lua

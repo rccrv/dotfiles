@@ -31,7 +31,7 @@ wk.register({
       a = {'<cmd>FzfLua lsp_code_actions<cr>', 'Code Action'},
       d = {'<cmd>lua vim.lsp.buf.definition()<cr>', 'Go to Definition'},
       e = {'<cmd>lua vim.lsp.buf.declaration()<cr>', 'Go to Declaration'},
-      f = {'<cmd>lua vim.lsp.buf.formatting()<cr>', 'Format Document'},
+      f = {'<cmd>lua vim.lsp.buf.format({async = true})<cr>', 'Format Document'},
       g = {'<cmd>FzfLua lsp_document_diagnostics<cr>', 'Document Diagnostics'},
       h = {'<cmd>lua vim.lsp.buf.hover()<cr>', 'Hover'},
       i = {'<cmd>lua vim.lsp.buf.implementation()<cr>', 'Go to Implementation'},

@@ -23,6 +23,7 @@
     pkgs.dbmate
     pkgs.chezmoi
     pkgs.firectl
+    pkgs.go-task
     pkgs.ripgrep
     pkgs.miniserve
     pkgs.terraform

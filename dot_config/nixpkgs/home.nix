@@ -17,6 +17,7 @@
     pkgs.glow
     pkgs.grex
     pkgs.kind
+    pkgs.caddy
     pkgs.cfssl
     pkgs.delta
     pkgs.gitui

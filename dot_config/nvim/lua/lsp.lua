@@ -136,12 +136,6 @@ lspconfig.r_language_server.setup({
   on_attach = custom_attach,
 })
 
--- elixirls: Elixir
-lspconfig.elixirls.setup({
-  capabilities = capabilities,
-  on_attach = custom_attach,
-})
-
 -- jdtls: Java
 lspconfig.jdtls.setup({
   capabilities = capabilities,
@@ -156,6 +150,18 @@ lspconfig.lemminx.setup({
 
 -- texlab: LaTeX
 lspconfig.texlab.setup({
+  capabilities = capabilities,
+  on_attach = custom_attach,
+})
+
+-- ocamllsp: OCaml
+lspconfig.ocamllsp.setup({
+  capabilities = capabilities,
+  on_attach = custom_attach,
+})
+
+-- zls: Zig
+lspconfig.zls.setup({
   capabilities = capabilities,
   on_attach = custom_attach,
 })

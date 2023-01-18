@@ -50,7 +50,7 @@ nmap <F1> <nop>
 
 set autochdir
 
-map <leader>l :e ~/Accounting/2022/current.ledger<CR>
+map <leader>l :e ~/Accounting/2023/current.ledger<CR>
 
 call plug#begin('~/.vim/plugged')
 Plug 'ervandew/supertab'

@@ -166,6 +166,18 @@ lspconfig.zls.setup({
   on_attach = custom_attach,
 })
 
+-- kotlin_language_server: Kotlin
+lspconfig.kotlin_language_server.setup({
+  capabilities = capabilities,
+  on_attach = custom_attach,
+})
+
+-- sourcekit: Swift
+lspconfig.sourcekit.setup({
+  capabilities = capabilities,
+  on_attach = custom_attach,
+})
+
 local lspkind = require 'lspkind'
 lspkind.init({
   mode = 'symbol_text'

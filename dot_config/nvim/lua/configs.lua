@@ -27,6 +27,9 @@ null_ls.setup({
     null_ls.builtins.formatting.isort.with({
       command = mason_path .. 'isort'
     }),
+    null_ls.builtins.diagnostics.ruff.with({
+      command = mason_path .. 'ruff'
+    }),
     -- JavaScript/TypeScript
     null_ls.builtins.formatting.prettier.with({
       command = mason_path .. 'prettier'

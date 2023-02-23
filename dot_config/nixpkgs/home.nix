@@ -23,10 +23,12 @@
     pkgs.gitui
     pkgs.dbmate
     pkgs.mkcert
+    pkgs.texlab
     pkgs.chezmoi
     pkgs.firectl
     pkgs.go-task
     pkgs.ripgrep
+    pkgs.tectonic
     pkgs.miniserve
     pkgs.terraform
     pkgs.firecracker

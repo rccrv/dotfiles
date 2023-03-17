@@ -22,7 +22,9 @@
     pkgs.delta
     pkgs.gitui
     pkgs.dbmate
+    pkgs.duckdb
     pkgs.mkcert
+    pkgs.rclone
     pkgs.texlab
     pkgs.chezmoi
     pkgs.firectl

@@ -88,6 +88,7 @@ return require('packer').startup(function()
     end
   }
   use 'folke/todo-comments.nvim'
+  use 'xiyaowong/transparent.nvim'
   use 'keith/swift.vim'
   use 'udalov/kotlin-vim'
 end)

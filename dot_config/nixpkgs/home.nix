@@ -10,6 +10,7 @@
   home.packages = [
     pkgs.fd
     pkgs.fx
+    pkgs.yq
     pkgs.gdu
     pkgs.fnm
     pkgs.fzf

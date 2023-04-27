@@ -2,7 +2,12 @@ local wk = require('which-key')
 
 wk.register({
   ['<leader>'] = {
-    c = {'<cmd>BufferClose<cr>', 'Close Buffer'},
+    b = {
+      name = "Buffers",
+      j = {'<cmd>CybuNext<cr>', 'Next'},
+      k = {'<cmd>CybuPrev<cr>', 'Next'}
+    },
+    c = {'<cmd>bdelete<cr>', 'Close Buffer'},
     d = {
       name = 'DAP',
       b = {'<cmd>lua require"dap".toggle_breakpoint()<cr>', 'Toggle Breakpoint'},

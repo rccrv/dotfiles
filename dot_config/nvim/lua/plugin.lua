@@ -4,12 +4,12 @@ return require('packer').startup(function()
   use 'wbthomason/packer.nvim'
   -- nightfly: colorscheme
   use 'bluz71/vim-nightfly-guicolors'
-  -- barbar: buffer bar
   use {
-    'romgrk/barbar.nvim',
-    requires = {'kyazdani42/nvim-web-devicons'}
+    'ghillb/cybu.nvim',
+    requires = {
+      'nvim-tree/nvim-web-devicons'
+    },
   }
-  -- vim-ledger: to edit ledger files
   use {
     'ledger/vim-ledger',
     ft = {'ledger'},

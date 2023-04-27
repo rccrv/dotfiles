@@ -13,11 +13,8 @@ map('n', '<F3>', ':NvimTreeToggle<cr>', opts)
 map('n', '<F4>', ':only<cr>', opts)
 
 -- Buffer navigation and moving
-map('n', '<A-,>', ':BufferPrevious<cr>', opts)
-map('n', '<A-.>', ':BufferNext<cr>', opts)
-map('n', '<A-<>', ':BufferMovePrevious<cr>', opts)
-map('n', '<A->>', ' :BufferMoveNext<cr>', opts)
-map('n', '<A-c>', ':BufferClose<cr>', opts)
+map('n', '<A-,>', ':CybuLastusedNext<cr>', opts)
+map('n', '<A-.>', ':CybuLastusedPrev<cr>', opts)
 
 -- \l open the ledger file
 map('n', '\\l', ':e ~/Git/ledger/Accounting/2022/current.ledger<cr>:chdir ~/Git/ledger/Accounting/2022<cr>', opts)

@@ -37,6 +37,8 @@ return require('packer').startup(function()
   }
   -- nvim-treesitter: allows some beautiful stuff with text
   use 'nvim-treesitter/nvim-treesitter'
+  -- nvim-ts-rainbow2: rainbow delimiters
+  use 'HiPhish/nvim-ts-rainbow2'
   -- nvim-ts-autotag: autoclose and autorename html tag
   use 'windwp/nvim-ts-autotag'
   -- indent-blankline: show a line indicating the indentation level

@@ -30,6 +30,11 @@ wk.register({
       L = {'<cmd>FzfLua git_commits<cr>', 'Log'},
       s = {'<cmd>FzfLua git_status<cr>', 'Status'},
     },
+    i = {
+      name = 'Installers',
+      l = {'<cmd>Lazy<cr>', 'Lazy'},
+      m = {'<cmd>Mason<cr>', 'Mason'},
+    },
     l = {
       name = 'LSP',
       --a = {'<cmd>Lspsaga code_action<cr>', 'Code Action'},
@@ -49,14 +54,6 @@ wk.register({
       s = {'<cmd>lua vim.lsp.buf.signature_help()<cr>', 'Signature Help'},
       w = {'<cmd>FzfLua lsp_workspace_diagnostics<cr>', 'Workspace Diagnostics'},
       W = {'<cmd>FzfLua lsp_live_workspace_symbols<cr>', 'Workspace Symbol Search'},
-    },
-    p = {
-      name = 'Packer',
-      c = {'<cmd>PackerCompile<cr>', 'Compile'},
-      i = {'<cmd>PackerInstall<cr>', 'Install'},
-      s = {'<cmd>PackerSync<cr>', 'Sync'},
-      S = {'<cmd>PackerStatus<cr>', 'Status'},
-      u = {'<cmd>PackerUpdate<cr>', 'Update'}
     },
     q = {'<cmd>qa<cr>', 'Quit'},
     w = {'<cmd>w<cr>', 'Save'},

@@ -22,3 +22,5 @@ require("transparent").setup({
     "NvimTreeNormal",
   }
 })
+
+require('gitsigns').setup({})

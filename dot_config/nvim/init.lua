@@ -1,6 +1,6 @@
 require 'impatient'
 require 'settings'
-require 'plugin'
+require 'packages'
 require 'keymap'
 require 'theme'
 require 'ui'

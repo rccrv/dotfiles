@@ -43,8 +43,10 @@
     pkgs.go-task
     pkgs.ripgrep
     pkgs.tectonic
+    pkgs.hyperfine
     pkgs.miniserve
     pkgs.terraform
+    pkgs.lazydocker
     pkgs.firecracker
     pkgs.pipe-rename
     pkgs.tmux-mem-cpu-load

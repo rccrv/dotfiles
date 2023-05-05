@@ -185,12 +185,6 @@ bar {
 # Tray
 exec_always blueman-applet
 exec_always nm-applet --indicator
-exec_always insync start
-
-# Insync goes to the scrathpad
-for_window [class="Insync"] mark "insync", floating enable, move scratchpad
 
 # Import config.d
 include /home/ricardo/.config/sway/config.d/*
-
-# TODO: Add grimshot screenshots

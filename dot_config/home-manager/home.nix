@@ -24,6 +24,7 @@
     pkgs.fnm
     pkgs.fzf
     pkgs.k9s
+    pkgs.cotp
     pkgs.glow
     pkgs.grex
     pkgs.kind

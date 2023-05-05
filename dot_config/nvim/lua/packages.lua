@@ -78,8 +78,6 @@ require("lazy").setup({
     }
   },
 
-  'lewis6991/impatient.nvim',
-
   'jakewvincent/mkdnflow.nvim',
 
   'ellisonleao/glow.nvim',

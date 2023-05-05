@@ -1,4 +1,3 @@
-require 'impatient'
 require 'settings'
 require 'packages'
 require 'keymap'

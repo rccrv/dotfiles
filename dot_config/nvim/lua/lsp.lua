@@ -91,6 +91,11 @@ lspconfig.cssls.setup({
 lspconfig.clangd.setup({
   capabilities = capabilities,
   on_attach = custom_attach,
+  -- Prevents an annoying warning
+  cmd = {
+    "clangd",
+    "--offset-encoding=utf-16"
+  }
 })
 
 -- tsserver: Javascript and Typescript

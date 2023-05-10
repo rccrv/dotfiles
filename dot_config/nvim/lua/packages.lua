@@ -46,6 +46,8 @@ require("lazy").setup({
 
   'stevearc/aerial.nvim',
 
+  'folke/trouble.nvim',
+
   'nvim-treesitter/nvim-treesitter',
 
   'HiPhish/nvim-ts-rainbow2',

@@ -56,6 +56,7 @@ wk.register({
       W = {'<cmd>FzfLua lsp_live_workspace_symbols<cr>', 'Workspace Symbol Search'},
     },
     q = {'<cmd>qa<cr>', 'Quit'},
+    t = {'<cmd>Trouble<cr>', 'Trouble'},
     w = {'<cmd>w<cr>', 'Save'},
   }
 })

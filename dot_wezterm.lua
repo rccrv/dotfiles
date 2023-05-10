@@ -8,7 +8,7 @@ end
 
 config.color_scheme = 'Dark Pastel'
 config.enable_tab_bar = false
-config.window_background_opacity = 0.75
+config.window_background_opacity = 0.85
 config.initial_rows = 34
 config.initial_cols = 120
 

@@ -1,0 +1,63 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 28,
+  //"modules-left": ["wlr/workspaces"],
+    "modules-left": ["wlr/taskbar"],
+  "modules-right": [ "pulseaudio", "backlight", "cpu", "memory", "battery", "tray", "clock" ],
+  "wlr/taskbar": {
+    "format": "{icon} {app_id}",
+    "max-length": 60,
+    "on-click": "activate"
+  },
+  "tray": {
+    // "icon-size": 21,
+    "spacing": 10
+  },
+  "pulseaudio": {
+    //"scroll-step": 1,
+    "format": "{volume}% {icon}",
+    "format-bluetooth": "{volume}% {icon}",
+    "format-muted": "",
+    "format-icons": {
+      "headphones": "",
+      "handsfree": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", ""]
+    },
+    "on-click": "pavucontrol"
+  },
+  "temperature": {
+    "hwmon-path": "/sys/class/hwmon/hwmon5/temp2_input",
+    "critical-threshold": 80,
+    "format-critical": "{temperatureC}°C ",
+    "format": "{temperatureC}°C "
+  },
+  "cpu": {
+    "format": "{usage:2}% "
+  },
+  "memory": {
+    "format": "{}% "
+  },
+  "backlight": {
+    "device": "intel_backlight",
+    "format": "{percent}% {icon}",
+    "format-icons": ["", ""]
+  },
+  "battery": {
+    "name": "battery",
+    "states": {
+      "warning": 20,
+      "critical": 10
+    },
+    "format": "{capacity}% {icon}",
+    "format-icons": ["", "", "", "", ""]
+  },
+  "clock": {
+    "tooltip-format": "{:%A\n%d %B %Y\n%H:%M}",
+    "format": "{:%H:%M}"
+  },
+}

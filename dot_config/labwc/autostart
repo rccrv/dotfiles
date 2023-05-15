@@ -1,0 +1,5 @@
+swaybg -i /home/ricardo/Pictures/valley-landscape.jpg -m fill > /dev/null 2>&1 &
+waybar -c /home/ricardo/.config/labwc/waybar/config -s /home/ricardo/.config/labwc/waybar/style.css > /dev/null 2>&1 &
+mako > /dev/null 2>&1 &
+blueman-applet > /dev/null 2>&1 &
+nm-applet --indicator > /dev/null 2>&1 &

@@ -7,7 +7,7 @@
   <keyboard>
     <default />
     <keybind key="W-d"><action name="Execute" command="wofi -G -I -d --show=drun" /></keybind>
-    <keybind key="C-A-b"><action name="Execute" command="firefox" /></keybind>
+    <keybind key="C-A-b"><action name="Execute" command="/home/ricardo/.userland/software/firefox/firefox" /></keybind>
     <keybind key="C-A-t"><action name="Execute" command="/home/ricardo/.userland/software/wezterm/wezterm" /></keybind>
     <keybind key="C-A-l"><action name="Execute" command="swaylock" /></keybind>
     <keybind key="C-A-q"><action name="Exit" /></keybind>

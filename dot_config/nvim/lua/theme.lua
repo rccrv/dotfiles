@@ -11,16 +11,19 @@ vim.cmd [[highlight Whitespace guifg=red]]
 vim.cmd [[highlight IndentBlanklineIndent guifg=#737373 blend=nocombine]]
 
 -- Creates a non formated blankline
-require('indent_blankline').setup {
+local indent_blankline = require 'indent_blankline'
+indent_blankline.setup {
     space_char_blankline = ' ',
     char_highlight_list = {'IndentBlanklineIndent'},
 }
 
 -- Transparent theme
-require("transparent").setup({
+local transparent = require 'transparent'
+transparent.setup({
   extra_groups = {
-    "NvimTreeNormal",
+    'NvimTreeNormal',
   }
 })
 
-require('gitsigns').setup({})
+local gitsigns = require 'gitsigns'
+gitsigns.setup({})

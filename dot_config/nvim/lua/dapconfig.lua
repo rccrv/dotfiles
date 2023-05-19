@@ -1,8 +1,6 @@
-local dap = require 'dap'
-local dapui = require 'dapui'
-
 local mason_path = '/home/ricardo/.local/share/nvim/mason/bin/'
 
+local dap = require 'dap'
 dap.adapters.lldb = {
   type = 'executable',
   command = '/usr/bin/lldb-vscode',
@@ -50,13 +48,14 @@ dap.configurations.python = {
 
 dap.configurations.cs = {
   {
-    type = "coreclr",
-    name = "launch - netcoredbg",
-    request = "launch",
+    type = 'coreclr',
+    name = 'launch - netcoredbg',
+    request = 'launch',
     program = function()
         return vim.fn.input('Path to dll', vim.fn.getcwd() .. '/bin/Debug/', 'file')
     end,
   },
 }
 
+local dapui = require 'dapui'
 dapui.setup({})

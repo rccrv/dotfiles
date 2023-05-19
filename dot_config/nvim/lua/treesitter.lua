@@ -1,6 +1,7 @@
 local rainbow = require 'ts-rainbow'
 
-require'nvim-treesitter.configs'.setup {
+local tsconfigs = require'nvim-treesitter.configs'
+tsconfigs.setup {
   ensure_instaled = 'maintained',
   highlight = {
     enable = true

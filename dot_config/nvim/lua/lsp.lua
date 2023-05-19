@@ -22,8 +22,8 @@ end
 
 -- sumneko: Lua
 local runtime_path = vim.split(package.path, ';')
-table.insert(runtime_path, "lua/?.lua")
-table.insert(runtime_path, "lua/?/init.lua")
+table.insert(runtime_path, 'lua/?.lua')
+table.insert(runtime_path, 'lua/?/init.lua')
 lspconfig.lua_ls.setup({
   capabilities = capabilities,
   on_attach = custom_attach,
@@ -37,7 +37,7 @@ lspconfig.lua_ls.setup({
         globals = {'vim'},
       },
       workspace = {
-        library = vim.api.nvim_get_runtime_file("", true),
+        library = vim.api.nvim_get_runtime_file('', true),
         useGitIgnore = true,
       },
       telemetry = {
@@ -55,10 +55,10 @@ lspconfig.pyright.setup({
     python = {
       analysis = {
         autoSearchPaths = true,
-        diagnosticMode = "workspace",
+        diagnosticMode = 'workspace',
         useLibraryCodeForTypes = true
       },
-      venvPath = ".venv"
+      venvPath = '.venv'
     }
   }
 })
@@ -93,8 +93,8 @@ lspconfig.clangd.setup({
   on_attach = custom_attach,
   -- Prevents an annoying warning
   cmd = {
-    "clangd",
-    "--offset-encoding=utf-16"
+    'clangd',
+    '--offset-encoding=utf-16'
   }
 })
 

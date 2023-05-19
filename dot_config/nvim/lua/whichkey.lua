@@ -1,20 +1,20 @@
-local wk = require('which-key')
+local wk = require 'which-key'
 
 wk.register({
   ['<leader>'] = {
     b = {
-      name = "Buffers",
+      name = 'Buffers',
       j = {'<cmd>CybuNext<cr>', 'Next'},
       k = {'<cmd>CybuPrev<cr>', 'Next'}
     },
     c = {'<cmd>bdelete<cr>', 'Close Buffer'},
     d = {
       name = 'DAP',
-      b = {'<cmd>lua require"dap".toggle_breakpoint()<cr>', 'Toggle Breakpoint'},
-      c = {'<cmd>lua require"dap".continue()<cr>', 'Continue'},
-      i = {'<cmd>lua require"dap".step_into()<cr>', 'Step Into'},
-      o = {'<cmd>lua require"dap".step_out()<cr>', 'Step Out'},
-      s = {'<cmd>lua require"dap".step_over()<cr>', 'Step Over'},
+      b = {'<cmd>lua require("dap").toggle_breakpoint()<cr>', 'Toggle Breakpoint'},
+      c = {'<cmd>lua require("dap").continue()<cr>', 'Continue'},
+      i = {'<cmd>lua require("dap").step_into()<cr>', 'Step Into'},
+      o = {'<cmd>lua require("dap").step_out()<cr>', 'Step Out'},
+      s = {'<cmd>lua require("dap").step_over()<cr>', 'Step Over'},
       t = {'<cmd>lua require("dapui").toggle()<cr>', 'Toggle UI'}
     },
     e = {'<cmd>NvimTreeToggle<cr>', 'Explorer'},
@@ -37,7 +37,6 @@ wk.register({
     },
     l = {
       name = 'LSP',
-      --a = {'<cmd>Lspsaga code_action<cr>', 'Code Action'},
       a = {'<cmd>FzfLua lsp_code_actions<cr>', 'Code Action'},
       d = {'<cmd>lua vim.lsp.buf.definition()<cr>', 'Go to Definition'},
       e = {'<cmd>lua vim.lsp.buf.declaration()<cr>', 'Go to Declaration'},

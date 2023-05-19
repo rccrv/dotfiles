@@ -1,9 +1,11 @@
-require("cybu").setup({
+local cybu = require 'cybu'
+cybu.setup({
   display_time = 350,
 })
 
-require("trouble").setup({})
+local trouble = require 'trouble'
+trouble.setup({})
 
-vim.wo.signcolumn = "yes:1"
+vim.wo.signcolumn = 'yes:1'
 vim.wo.number = true
 vim.opt.showtabline = 0

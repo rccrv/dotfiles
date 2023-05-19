@@ -1,12 +1,6 @@
-local fzf = require 'fzf-lua'
-local nvimtree = require 'nvim-tree'
-local null_ls = require 'null-ls'
-local todo_comments = require 'todo-comments'
-local mkdnflow = require 'mkdnflow'
-local glow = require 'glow'
-
 local mason_path = '/home/ricardo/.local/share/nvim/mason/bin/'
 
+local fzf = require 'fzf-lua'
 fzf.setup({
   files = {
     cmd = 'fd -t f'
@@ -16,8 +10,10 @@ fzf.setup({
   }
 })
 
+local nvimtree = require 'nvim-tree'
 nvimtree.setup({})
 
+local null_ls = require 'null-ls'
 null_ls.setup({
   sources = {
     -- Python
@@ -49,7 +45,7 @@ null_ls.setup({
     -- SQL
     null_ls.builtins.formatting.sqlfluff.with({
       command = mason_path .. 'sqlflush',
-      extra_args = {"--dialect", "postgres"}
+      extra_args = {'--dialect', 'postgres'}
     }),
     -- JSON
     null_ls.builtins.formatting.jq.with({
@@ -64,10 +60,13 @@ null_ls.setup({
   }
 })
 
+local todo_comments = require 'todo-comments'
 todo_comments.setup({
   signs = false
 })
 
+local mkdnflow = require 'mkdnflow'
 mkdnflow.setup({})
 
+local glow = require 'glow'
 glow.setup({})

@@ -5,7 +5,11 @@ wk.register({
     b = {
       name = 'Buffers',
       j = {'<cmd>CybuNext<cr>', 'Next'},
-      k = {'<cmd>CybuPrev<cr>', 'Next'}
+      k = {'<cmd>CybuPrev<cr>', 'Previous'},
+      l = {'<cmd>lua require("buffer_manager.ui").toggle_quick_menu()<cr>', 'List'},
+      o = {'<cmd>only<cr>', 'Close other buffers'},
+      s = {'<cmd>split<cr>', 'Horizontal split'},
+      v = {'<cmd>vsplit<cr>', 'Vertical split'}
     },
     c = {'<cmd>bdelete<cr>', 'Close Buffer'},
     d = {

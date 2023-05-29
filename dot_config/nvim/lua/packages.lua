@@ -99,6 +99,10 @@ lazy.setup({
     },
   },
 
+  {
+    'j-morano/buffer_manager.nvim',
+  },
+
   'folke/todo-comments.nvim',
 
   'xiyaowong/transparent.nvim',

@@ -1,6 +1,6 @@
 # Base #
 alias df="df -h"
-alias less="less -cR"
+alias less="less -cR --mouse --wheel-lines=4"
 alias ls="ls --color=auto"
 alias grep="grep -E --color=auto"
 alias rm="rm -vi"

@@ -18,6 +18,7 @@
   # environment.
   home.packages = [
     pkgs.fd
+    pkgs.fq
     pkgs.fx
     pkgs.yq
     pkgs.gdu

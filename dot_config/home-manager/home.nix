@@ -28,6 +28,7 @@
     pkgs.cotp
     pkgs.glow
     pkgs.grex
+    pkgs.hurl
     pkgs.kind
     pkgs.caddy
     pkgs.cfssl

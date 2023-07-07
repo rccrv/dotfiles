@@ -7,7 +7,7 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term kitty
+set $term /home/ricardo/.userland/software/wezterm/wezterm
 # wofi menu
 set $menu wofi -G -I -d --show=drun
 
@@ -53,9 +53,9 @@ floating_modifier $mod normal
 bindsym $mod+Shift+c reload
 
 # Firefox
-bindsym Ctrl+Alt+b exec firefox-wayland
+bindsym Ctrl+Alt+b exec /home/ricardo/.userland/software/firefox/firefox
 # Kitty
-bindsym Ctrl+Alt+t exec kitty
+bindsym Ctrl+Alt+t exec /home/ricardo/.userland/software/wezterm/wezterm
 # swaylock
 bindsym Ctrl+Alt+l exec swaylock
 # Volume up, volume down and mute

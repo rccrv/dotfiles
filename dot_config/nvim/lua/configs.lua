@@ -1,5 +1,3 @@
-local mason_path = '/home/ricardo/.local/share/nvim/mason/bin/'
-
 local fzf = require 'fzf-lua'
 fzf.setup({
   files = {
@@ -13,50 +11,63 @@ fzf.setup({
 local nvimtree = require 'nvim-tree'
 nvimtree.setup({})
 
-local null_ls = require 'null-ls'
-null_ls.setup({
-  sources = {
-    -- Python
-    null_ls.builtins.formatting.black.with({
-      command = mason_path .. 'black'
-    }),
-    null_ls.builtins.formatting.isort.with({
-      command = mason_path .. 'isort'
-    }),
-    null_ls.builtins.diagnostics.ruff.with({
-      command = mason_path .. 'ruff'
-    }),
-    -- JavaScript/TypeScript
-    null_ls.builtins.formatting.prettier.with({
-      command = mason_path .. 'prettier'
-    }),
-    -- C/C++
-    null_ls.builtins.formatting.clang_format,
-    -- C#
-    null_ls.builtins.formatting.csharpier,
-    -- Golang
-    null_ls.builtins.formatting.gofmt,
-    -- Rust
-    null_ls.builtins.formatting.rustfmt,
-    -- R
-    null_ls.builtins.formatting.format_r,
-    -- Terraform
-    null_ls.builtins.formatting.terraform_fmt,
-    -- SQL
-    null_ls.builtins.formatting.sqlfluff.with({
-      command = mason_path .. 'sqlflush',
-      extra_args = {'--dialect', 'postgres'}
-    }),
-    -- JSON
-    null_ls.builtins.formatting.jq.with({
-      command = mason_path .. 'jq'
-    }),
-    -- YAML
-    null_ls.builtins.formatting.yamlfmt.with({
-      command = mason_path .. 'yamlfmt'
-    }),
-    -- Extra
-    null_ls.builtins.formatting.trim_whitespace
+local nvim_lint = require 'lint'
+nvim_lint.linters_by_ft = {
+  c = {'clangtidy'},
+  cpp = {'clangtidy', 'cppcheck'},
+  go = {'revive'},
+  javascript = {'eslint'},
+  python = {'mypy', 'ruff'},
+  typecript = {'eslint'},
+}
+
+vim.api.nvim_create_autocmd({ "BufWritePost" }, {
+  callback = function()
+    require("lint").try_lint()
+  end,
+})
+
+local formatter = require 'formatter'
+local formatter_filetypes = require 'formatter.filetypes'
+formatter.setup({
+  logging = true,
+  log_level = vim.log.levels.WARN,
+  filetype = {
+    c = {
+      formatter_filetypes.c.clangformat
+    },
+    cpp = {
+      formatter_filetypes.cpp.clangformat
+    },
+    go = {
+      formatter_filetypes.go.gofmt,
+      formatter_filetypes.go.goimports
+    },
+    javascript = {
+      formatter_filetypes.javascript.prettier,
+    },
+    json = {
+      formatter_filetypes.json.jq
+    },
+    python = {
+      formatter_filetypes.python.black,
+      formatter_filetypes.python.isort
+    },
+    rust = {
+      formatter_filetypes.rust.rustfmt
+    },
+    terraform = {
+      formatter_filetypes.terraform.terraformfmt
+    },
+    typescript = {
+      formatter_filetypes.typescript.prettier
+    },
+    yaml = {
+      formatter_filetypes.yaml.yamlfmt
+    },
+    ["*"] = {
+      formatter_filetypes.any.remove_trailing_whitespace
+    }
   }
 })
 

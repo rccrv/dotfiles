@@ -72,8 +72,6 @@ lazy.setup({
 
   'folke/lua-dev.nvim',
 
-  'jose-elias-alvarez/null-ls.nvim',
-
   {
     'ibhagwan/fzf-lua',
     dependencies = {
@@ -102,6 +100,10 @@ lazy.setup({
   {
     'j-morano/buffer_manager.nvim',
   },
+
+  'mhartington/formatter.nvim',
+
+  'mfussenegger/nvim-lint',
 
   'folke/todo-comments.nvim',
 

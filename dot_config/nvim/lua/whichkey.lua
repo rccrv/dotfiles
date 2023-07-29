@@ -50,7 +50,6 @@ wk.register({
       i = {'<cmd>lua vim.lsp.buf.implementation()<cr>', 'Go to Implementation'},
       I = {'<cmd>LspInfo<cr>', 'LSP Info'},
       n = {'<cmd>lua vim.lsp.buf.rename()<cr>', 'Rename'},
-      N = {'<cmd>NullLsInfo<cr>', 'null-ls Info'},
       o = {'<cmd>AerialToggle<cr>', 'Outline'},
       p = {'<cmd>FzfLua lsp_definitions<cr>', 'Peek Definition'},
       r = {'<cmd>FzfLua lsp_references<cr>', 'References'},

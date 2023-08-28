@@ -21,6 +21,7 @@
     pkgs.fq
     pkgs.fx
     pkgs.yq
+    pkgs.duf
     pkgs.gdu
     pkgs.fnm
     pkgs.fzf
@@ -35,7 +36,6 @@
     pkgs.delta
     pkgs.gitui
     pkgs.dbmate
-    pkgs.duckdb
     pkgs.mkcert
     pkgs.rclone
     pkgs.chezmoi

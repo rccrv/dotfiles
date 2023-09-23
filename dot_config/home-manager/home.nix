@@ -31,6 +31,7 @@
     pkgs.grex
     pkgs.hurl
     pkgs.kind
+    pkgs.solc
     pkgs.caddy
     pkgs.cfssl
     pkgs.delta

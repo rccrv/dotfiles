@@ -8,14 +8,10 @@ vim.cmd [[highlight StatusLine guibg=none]]
 vim.cmd [[highlight BufferTabpageFill guibg=none]]
 -- Whitespaces from listchar are have a red background
 vim.cmd [[highlight Whitespace guifg=red]]
-vim.cmd [[highlight IndentBlanklineIndent guifg=#737373 blend=nocombine]]
 
 -- Creates a non formated blankline
-local indent_blankline = require 'indent_blankline'
-indent_blankline.setup {
-    space_char_blankline = ' ',
-    char_highlight_list = {'IndentBlanklineIndent'},
-}
+local ibl = require 'ibl'
+ibl.setup({})
 
 -- Transparent theme
 local transparent = require 'transparent'

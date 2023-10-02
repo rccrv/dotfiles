@@ -55,7 +55,11 @@ lazy.setup({
 
   'windwp/nvim-ts-autotag',
 
-  'lukas-reineke/indent-blankline.nvim',
+  {
+    'lukas-reineke/indent-blankline.nvim',
+    main = 'ibl',
+    opts = {}
+  },
 
   'hrsh7th/nvim-cmp',
 

@@ -31,7 +31,9 @@
     pkgs.grex
     pkgs.hurl
     pkgs.kind
+    pkgs.krew
     pkgs.solc
+    pkgs.tilt
     pkgs.caddy
     pkgs.cfssl
     pkgs.delta
@@ -41,13 +43,17 @@
     pkgs.rclone
     pkgs.chezmoi
     pkgs.kubectl
+    pkgs.lazygit
     pkgs.go-task
     pkgs.ripgrep
+    pkgs.minikube
+    pkgs.opentofu
     pkgs.hyperfine
     pkgs.miniserve
-    pkgs.terraform
+    pkgs.difftastic
     pkgs.lazydocker
     pkgs.pipe-rename
+    pkgs.kubernetes-helm
     pkgs.tmux-mem-cpu-load
   ];
 

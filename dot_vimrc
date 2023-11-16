@@ -56,6 +56,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'ervandew/supertab'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'ledger/vim-ledger'
+Plug 'tribela/vim-transparent'
 call plug#end()
 
 if !isdirectory($HOME .'/.vim/autoload')

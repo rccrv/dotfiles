@@ -42,10 +42,13 @@
     pkgs.mkcert
     pkgs.rclone
     pkgs.chezmoi
+    pkgs.fselect
+    pkgs.jujutsu
     pkgs.kubectl
     pkgs.lazygit
     pkgs.go-task
     pkgs.ripgrep
+    pkgs.ast-grep
     pkgs.minikube
     pkgs.opentofu
     pkgs.hyperfine

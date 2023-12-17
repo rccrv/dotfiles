@@ -9,8 +9,8 @@ end
 config.color_scheme = 'Dark Pastel'
 config.enable_tab_bar = false
 config.window_background_opacity = 0.85
-config.initial_rows = 34
-config.initial_cols = 120
+config.initial_rows = 39
+config.initial_cols = 136
 
 config.font = wezterm.font 'DroidSansMono NF'
 config.font_size = 12.0

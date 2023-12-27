@@ -21,6 +21,7 @@
     pkgs.fq
     pkgs.fx
     pkgs.yq
+    pkgs.act
     pkgs.duf
     pkgs.gdu
     pkgs.fnm
@@ -38,6 +39,7 @@
     pkgs.cfssl
     pkgs.delta
     pkgs.gitui
+    pkgs.toast
     pkgs.dbmate
     pkgs.mkcert
     pkgs.rclone
@@ -50,6 +52,7 @@
     pkgs.ripgrep
     pkgs.ast-grep
     pkgs.minikube
+    pkgs.onefetch
     pkgs.opentofu
     pkgs.hyperfine
     pkgs.miniserve

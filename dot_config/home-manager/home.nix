@@ -54,6 +54,7 @@
     pkgs.minikube
     pkgs.onefetch
     pkgs.opentofu
+    pkgs.starship
     pkgs.hyperfine
     pkgs.miniserve
     pkgs.difftastic

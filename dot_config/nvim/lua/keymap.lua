@@ -17,7 +17,7 @@ map('n', '<A-,>', ':CybuLastusedNext<cr>', opts)
 map('n', '<A-.>', ':CybuLastusedPrev<cr>', opts)
 
 -- \l open the ledger file
-map('n', '\\l', ':e ~/Git/ledger/Accounting/2022/current.ledger<cr>:chdir ~/Git/ledger/Accounting/2022<cr>', opts)
+map('n', '\\l', ':e ~/Git/ledger/Accounting/2024/current.ledger<cr>:chdir ~/Git/ledger/Accounting/2024<cr>', opts)
 
 -- Map space as leader key
 map('', '<Space>', '<nop>', opts)

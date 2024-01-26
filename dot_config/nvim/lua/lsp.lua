@@ -177,12 +177,6 @@ lspconfig.kotlin_language_server.setup({
   on_attach = custom_attach,
 })
 
--- sourcekit: Swift
-lspconfig.sourcekit.setup({
-  capabilities = capabilities,
-  on_attach = custom_attach,
-})
-
 local lspkind = require 'lspkind'
 lspkind.init({
   mode = 'symbol_text'

@@ -20,6 +20,7 @@
     pkgs.fd
     pkgs.fq
     pkgs.fx
+    pkgs.xh
     pkgs.yq
     pkgs.act
     pkgs.duf

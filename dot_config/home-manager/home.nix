@@ -23,6 +23,7 @@
     pkgs.xh
     pkgs.yq
     pkgs.act
+    pkgs.air
     pkgs.duf
     pkgs.gdu
     pkgs.fnm

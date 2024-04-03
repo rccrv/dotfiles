@@ -14,6 +14,9 @@
   # release notes.
   home.stateVersion = "22.11"; # Please read the comment before changing.
 
+  # Allow unfree software
+  nixpkgs.config.allowUnfree = true;
+
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = [
@@ -26,6 +29,7 @@
     pkgs.air
     pkgs.duf
     pkgs.gdu
+    pkgs.gex
     pkgs.fnm
     pkgs.fzf
     pkgs.k9s
@@ -45,6 +49,7 @@
     pkgs.dbmate
     pkgs.mkcert
     pkgs.rclone
+    pkgs.sqlcmd
     pkgs.chezmoi
     pkgs.fselect
     pkgs.jujutsu
@@ -64,6 +69,7 @@
     pkgs.pipe-rename
     pkgs.kubernetes-helm
     pkgs.tmux-mem-cpu-load
+    pkgs.oracle-instantclient
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage

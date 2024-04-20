@@ -40,19 +40,21 @@
     pkgs.kind
     pkgs.krew
     pkgs.solc
-    pkgs.tilt
+    pkgs.xplr
     pkgs.caddy
     pkgs.cfssl
     pkgs.delta
     pkgs.gitui
+    pkgs.stern
     pkgs.toast
+    pkgs.bottom
     pkgs.dbmate
+    pkgs.direnv
     pkgs.mkcert
     pkgs.rclone
     pkgs.sqlcmd
     pkgs.chezmoi
     pkgs.fselect
-    pkgs.jujutsu
     pkgs.kubectl
     pkgs.lazygit
     pkgs.go-task

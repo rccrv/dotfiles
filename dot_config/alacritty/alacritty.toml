@@ -1,0 +1,10 @@
+[window]
+opacity = 0.85
+dimensions = { columns = 120, lines = 34 }
+
+[font]
+normal.family = "DroidSansMono NF"
+size = 12.0
+
+[scrolling]
+multiplier = 6

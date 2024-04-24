@@ -58,6 +58,7 @@
     pkgs.kubectl
     pkgs.lazygit
     pkgs.go-task
+    pkgs.kompose
     pkgs.ripgrep
     pkgs.ast-grep
     pkgs.minikube
@@ -65,6 +66,7 @@
     pkgs.opentofu
     pkgs.starship
     pkgs.hyperfine
+    pkgs.kubecolor
     pkgs.miniserve
     pkgs.difftastic
     pkgs.lazydocker

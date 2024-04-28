@@ -33,6 +33,7 @@
     pkgs.fnm
     pkgs.fzf
     pkgs.k9s
+    pkgs.tea
     pkgs.cotp
     pkgs.glow
     pkgs.grex
@@ -53,6 +54,7 @@
     pkgs.mkcert
     pkgs.rclone
     pkgs.sqlcmd
+    pkgs.xcaddy
     pkgs.chezmoi
     pkgs.fselect
     pkgs.kubectl
@@ -61,6 +63,7 @@
     pkgs.kompose
     pkgs.ripgrep
     pkgs.ast-grep
+    pkgs.authelia
     pkgs.minikube
     pkgs.onefetch
     pkgs.opentofu

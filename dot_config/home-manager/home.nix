@@ -51,6 +51,7 @@
     pkgs.bottom
     pkgs.dbmate
     pkgs.direnv
+    pkgs.kanidm
     pkgs.mkcert
     pkgs.rclone
     pkgs.sqlcmd

@@ -8,9 +8,13 @@
     <default />
     <keybind key="W-d"><action name="Execute" command="wofi -G -I -d --show=drun" /></keybind>
     <keybind key="C-A-b"><action name="Execute" command="/home/ricardo/.userland/software/firefox/firefox" /></keybind>
+    <keybind key="C-A-c"><action name="Execute" command="brave-browser" /></keybind>
     <keybind key="C-A-t"><action name="Execute" command="alacritty" /></keybind>
+    <keybind key="C-A-f"><action name="Execute" command="foot" /></keybind>
     <keybind key="C-A-l"><action name="Execute" command="swaylock" /></keybind>
     <keybind key="C-A-q"><action name="Exit" /></keybind>
+    <keybind key="A-Up"><action name="ToggleMaximize" direction="both" /></keybind>
+    <keybind key="A-Down"><action name="Iconify" /></keybind>
   </keyboard>
 
 </labwc_config>

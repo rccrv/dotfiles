@@ -32,6 +32,7 @@
     pkgs.gex
     pkgs.fnm
     pkgs.fzf
+    pkgs.k3d
     pkgs.k9s
     pkgs.tea
     pkgs.cotp
@@ -71,6 +72,7 @@
     pkgs.starship
     pkgs.hyperfine
     pkgs.kubecolor
+    pkgs.kubefirst
     pkgs.miniserve
     pkgs.difftastic
     pkgs.lazydocker

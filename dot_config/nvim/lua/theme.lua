@@ -1,3 +1,5 @@
+local rainbow_delimiters = require 'rainbow-delimiters.setup'
+
 -- Use the nightfly colorscheme
 vim.cmd [[colorscheme nightfly]]
 -- Transparent background
@@ -20,6 +22,8 @@ transparent.setup({
     'NvimTreeNormal',
   }
 })
+
+rainbow_delimiters.setup({})
 
 local gitsigns = require 'gitsigns'
 gitsigns.setup({})

@@ -51,7 +51,7 @@ lazy.setup({
 
   'nvim-treesitter/nvim-treesitter',
 
-  'HiPhish/nvim-ts-rainbow2',
+  'HiPhish/rainbow-delimiters.nvim',
 
   'windwp/nvim-ts-autotag',
 

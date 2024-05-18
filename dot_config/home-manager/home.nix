@@ -42,7 +42,7 @@
     pkgs.kind
     pkgs.krew
     pkgs.solc
-    pkgs.xplr
+    pkgs.yazi
     pkgs.caddy
     pkgs.cfssl
     pkgs.delta

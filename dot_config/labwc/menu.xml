@@ -4,8 +4,8 @@
 <menu id="root-menu" label="">
   <item label="Firefox"><action name="Execute" command="/home/ricardo/.userland/software/firefox/firefox" /></item>
   <item label="Brave"><action name="Execute" command="brave-browser" /></item>
-  <item label="Alacritty"><action name="Execute" command="alacritty" /></item>
   <item label="Foot"><action name="Execute" command="foot" /></item>
+  <item label="Alacritty"><action name="Execute" command="alacritty" /></item>
   <item label="Thunar"><action name="Execute" command="thunar" /></item>
   <item label="Reconfigure"><action name="Reconfigure" /></item>
   <item label="Exit"><action name="Exit" /></item>

@@ -15,7 +15,7 @@ config.initial_cols = 136
 config.font = wezterm.font 'DroidSansMono NF'
 config.font_size = 12.0
 
-config.audible_bell = "Disabled"
+config.audible_bell = 'Disabled'
 
 return config
 

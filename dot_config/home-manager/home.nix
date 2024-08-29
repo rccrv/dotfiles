@@ -30,7 +30,6 @@
     pkgs.air
     pkgs.duf
     pkgs.gdu
-    pkgs.gex
     pkgs.fnm
     pkgs.fzf
     pkgs.k3d

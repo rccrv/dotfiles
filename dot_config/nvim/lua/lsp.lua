@@ -98,8 +98,8 @@ lspconfig.clangd.setup({
   }
 })
 
--- tsserver: Javascript and Typescript
-lspconfig.tsserver.setup({
+-- ts_ls: Javascript and Typescript
+lspconfig.ts_ls.setup({
   capabilities = capabilities,
   on_attach = custom_attach,
 })

@@ -25,7 +25,6 @@
     pkgs.fq
     pkgs.fx
     pkgs.xh
-    pkgs.yq
     pkgs.act
     pkgs.air
     pkgs.duf
@@ -37,23 +36,22 @@
     pkgs.tea
     pkgs.cotp
     pkgs.glow
-    pkgs.grex
     pkgs.hurl
     pkgs.kind
     pkgs.krew
-    pkgs.solc
     pkgs.yazi
     pkgs.caddy
     pkgs.cfssl
     pkgs.delta
     pkgs.gitui
     pkgs.stern
-    pkgs.toast
+    pkgs.yq-go
     pkgs.bottom
     pkgs.dbmate
     pkgs.direnv
     pkgs.kanidm
     pkgs.mkcert
+    pkgs.xq-xml
     pkgs.rclone
     pkgs.sqlcmd
     pkgs.xcaddy

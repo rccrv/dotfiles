@@ -28,9 +28,10 @@
     pkgs.act
     pkgs.air
     pkgs.duf
-    pkgs.gdu
     pkgs.fnm
     pkgs.fzf
+    pkgs.gdu
+    pkgs.gql
     pkgs.k3d
     pkgs.k9s
     pkgs.tea
@@ -48,7 +49,6 @@
     pkgs.yq-go
     pkgs.bottom
     pkgs.dbmate
-    pkgs.direnv
     pkgs.kanidm
     pkgs.mkcert
     pkgs.xq-xml
@@ -72,6 +72,7 @@
     pkgs.kubecolor
     pkgs.kubefirst
     pkgs.miniserve
+    pkgs.watchexec
     pkgs.difftastic
     pkgs.lazydocker
     pkgs.pipe-rename

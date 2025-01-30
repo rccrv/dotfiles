@@ -25,7 +25,7 @@ lazy.setup({
   },
 
   {
-    'ledger/vim-ledger',
+    'anekos/hledger-vim',
     ft = {'ledger'},
   },
 

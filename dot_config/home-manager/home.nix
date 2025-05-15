@@ -27,7 +27,6 @@
     pkgs.xh
     pkgs.act
     pkgs.air
-    pkgs.duf
     pkgs.fnm
     pkgs.fzf
     pkgs.gdu
@@ -36,6 +35,7 @@
     pkgs.k9s
     pkgs.tea
     pkgs.cotp
+    pkgs.dysk
     pkgs.glow
     pkgs.hurl
     pkgs.kind

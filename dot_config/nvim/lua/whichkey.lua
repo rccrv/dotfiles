@@ -45,6 +45,6 @@ wk.add({
   { "<leader>ls", "<cmd>lua vim.lsp.buf.signature_help()<cr>", desc = "Signature Help" },
   { "<leader>lw", "<cmd>FzfLua lsp_workspace_diagnostics<cr>", desc = "Workspace Diagnostics" },
   { "<leader>q", "<cmd>qa<cr>", desc = "Quit" },
-  { "<leader>t", "<cmd>TroubleToggle<cr>", desc = "Trouble" },
+  { "<leader>t", "<cmd>Trouble diagnostics toggle<cr>", desc = "Trouble" },
   { "<leader>w", "<cmd>w<cr>", desc = "Save" },
 })

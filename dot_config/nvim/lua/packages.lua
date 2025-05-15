@@ -13,8 +13,6 @@ vim.opt.rtp:prepend(lazypath)
 
 local lazy = require 'lazy'
 lazy.setup({
-  'wbthomason/packer.nvim',
-
   'bluz71/vim-nightfly-guicolors',
 
   {

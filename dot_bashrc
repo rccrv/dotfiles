@@ -1,3 +1,5 @@
+source $HOME/.bash/profile.bash
+
 source $HOME/.bash/settings.bash
 
 source $HOME/.bash/aliases.bash
@@ -8,8 +10,10 @@ source $HOME/.bash/paths.bash
 
 source $HOME/.bash/functions.bash
 
-source $HOME/.bash/nix.bash
-
-source $HOME/.bash/machine.bash
+if [ $COMPUTER_TYPE == "desktop" ]; then
+  source $HOME/.bash/nix.bash
+fi
 
 source $HOME/.bash/devenvs.bash
+
+source $HOME/.bash/machine.bash

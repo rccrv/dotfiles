@@ -23,3 +23,10 @@ if [ ! -e $HOME/.bash/machine.bash ]; then
   touch $HOME/.bash/machine.bash
   echo "# Machine specific configurations #" > $HOME/.bash/machine.bash
 fi
+
+# Create a profile if it's not there #
+if [ ! -e $HOME/.bash/profile.bash ]; then
+  touch $HOME/.bash/profile.bash
+  echo "# Machine profile #" > $HOME/.bash/profile.bash
+  echo "export COMPUTER_TYPE=generic" >> $HOME/.bash/profile.bash
+fi

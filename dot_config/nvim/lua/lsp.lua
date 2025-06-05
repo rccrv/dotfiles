@@ -1,9 +1,6 @@
 -- Import lspconfig
 local lspconfig = require 'lspconfig'
 
-local lspinstaller = require 'nvim-lsp-installer'
-lspinstaller.setup({})
-
 local mason = require 'mason'
 mason.setup({})
 
@@ -16,7 +13,6 @@ local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 local function custom_attach(client, buffnr)
-  -- Formatting is now done by null-ls
   client.server_capabilities.documentFormattingProvider = false
 end
 

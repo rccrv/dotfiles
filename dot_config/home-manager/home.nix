@@ -46,6 +46,7 @@
     pkgs.delta
     pkgs.gitui
     pkgs.stern
+    pkgs.typst
     pkgs.yq-go
     pkgs.bottom
     pkgs.dbmate

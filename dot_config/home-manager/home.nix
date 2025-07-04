@@ -24,6 +24,7 @@
     pkgs.fd
     pkgs.fq
     pkgs.fx
+    pkgs.k6
     pkgs.xh
     pkgs.act
     pkgs.air
@@ -46,6 +47,7 @@
     pkgs.delta
     pkgs.gitui
     pkgs.stern
+    pkgs.tokei
     pkgs.typst
     pkgs.yq-go
     pkgs.bottom

@@ -41,9 +41,11 @@
     pkgs.hurl
     pkgs.kind
     pkgs.krew
+    pkgs.tilt
     pkgs.yazi
     pkgs.caddy
     pkgs.cfssl
+    pkgs.cmctl
     pkgs.delta
     pkgs.gitui
     pkgs.stern
@@ -52,7 +54,7 @@
     pkgs.yq-go
     pkgs.bottom
     pkgs.dbmate
-    pkgs.kanidm
+    pkgs.fluxcd
     pkgs.mkcert
     pkgs.xq-xml
     pkgs.rclone
@@ -63,20 +65,23 @@
     pkgs.kubectl
     pkgs.lazygit
     pkgs.go-task
+    pkgs.grpcurl
     pkgs.kompose
     pkgs.ripgrep
     pkgs.ast-grep
     pkgs.authelia
+    pkgs.kafkactl
     pkgs.minikube
     pkgs.onefetch
     pkgs.opentofu
     pkgs.starship
     pkgs.hyperfine
     pkgs.kubecolor
-    pkgs.kubefirst
+    pkgs.kustomize
     pkgs.miniserve
     pkgs.watchexec
     pkgs.difftastic
+    pkgs.kanidm_1_6
     pkgs.lazydocker
     pkgs.pipe-rename
     pkgs.kubernetes-helm

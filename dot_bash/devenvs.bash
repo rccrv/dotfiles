@@ -6,6 +6,7 @@ export WORKON_HOME=$HOME/.virtualenvs
 export PIP_VIRTUALENV_BASE=$WORKON_HOME
 export PIP_RESPECT_VIRTUALENV=true
 export PYTHONSTARTUP=$HOME/.pythonrc
+export PYTHON_BASIC_REPL=1
 export PATH="$HOME/.userland/software/python3/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 
